@@ -4,14 +4,26 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     box-sizing: border-box;
 }
+@keyframes fade-inout{
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
 
+.fade-in-fade-out{
+    animation: fade-inout 5s infinite alternate;
+    font-size: 5em;
+    text-align: center;
+}
 main {
+   
     width: 100%;
     height: 100vh;
-    background-color: #00cec9;
+    background-color: #0f9c9c;
+    background-position: bottom;
+    background-size: cover;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
 }
 
